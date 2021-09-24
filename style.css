@@ -194,7 +194,6 @@ nav a {
 }
 .profile-contents {
   display: flex;
-
 }
 .profile-img,
 .profile-text {
@@ -240,7 +239,11 @@ nav a {
 .contact-item h3 {
   padding-bottom: 5px;
 }
-.contact-item :nth-child(3){
+/* .contact-item :nth-child(3){
+  padding-top: 20px;
+} */
+
+.left-item :nth-child(3) {
   padding-top: 20px;
 }
 .contact-item-icon {
@@ -260,4 +263,114 @@ footer {
 }
 footer p {
   color: #fafafa;
+}
+
+/* Responsive */
+.rwd {
+  display: none;
+  color: #fafafa;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:767px) {
+  /* header */
+  nav {
+    width: 90%;
+    height: 50px;
+  }
+  nav > img {
+    height: 50px;
+  }
+  nav li {
+    display: none;
+  }
+  .rwd {
+    display: block;
+  }
+  /* main-visual */
+  .main-visual {
+    background-image: url(img/code.png);
+    width: 100%;
+  }
+  .main-visual-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-visual h1{
+    font-size: 40px;
+  }
+  .main-visual p {
+    font-size: 18px;
+  }
+  /* portfolio */
+  .portfolio-container {
+    width: 90%;
+  }
+  .portfolio-img-container :nth-child(odd){
+    display: none;
+  }
+  .portfolio2 ,
+  .portfolio4  {
+    margin: 0 auto 10px;
+  }
+  .portfolio6 {
+    margin: 0 auto;
+  }
+  /* feature */
+  #feature {
+    width: 90%;
+  }
+  .strength-container > div + div {
+    margin-left: auto;
+    margin-top: 10px;
+  }
+  .strength-container {
+    display: block;
+    margin: 0 auto;
+  }
+  .strength-item {
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* profile */
+  .profile-container {
+    width: 90%;
+  }
+  .profile-contents {
+    display: block;
+  }
+  .profile-img,
+  .profile-text {
+    width: 100%;
+  }
+  .profile-text {
+    text-align: center;
+    margin: 20px auto 0;
+  }
+  /* contact */
+  #contact {
+    width: 90%;
+  }
+  .contact-container {
+    display: block;
+    text-align: center;
+  }
+  .contact-item {
+    width: 100%;
+  }
+
+  .left-item :nth-child(3){
+    padding-top: 20px;
+  }
+  .right-item > h3 {
+    padding-top: 20px;
+  }
+  /* .contact-item :nth-child(3){
+    padding-top: 0px;
+  } */
+  .contact-item-icon i + i{
+    padding-left: 8px;
+  }
 }
